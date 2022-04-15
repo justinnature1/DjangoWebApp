@@ -2,5 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-	return HttpResponse('Hello World')
+	return HttpResponse('Hello World!')
+
+def customName(request, name):
+	return HttpResponse('Hello %s!' % name)
 
